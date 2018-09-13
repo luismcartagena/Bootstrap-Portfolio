@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luis Cartagena</title>
+    <!-- We need to bring in the bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+
+        header {
+            width: 100%;
+            position: relative;
+            background-color: lightgrey;
+            height: 68px;
+        }
+
+        #title {
+            width: 960px;
+            margin: 0 auto;
+            height: 100px;
+        }
+
+        #title h1 {
+            background-color: orange;
+            margin: 0;
+            padding: 10px;
+            width: 300px;
+        }
+
+        nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-top: 24px;
+        }
+
+        nav a {
+            padding-top: 24px;
+            margin-right: 10px;
+        }
+
+        #content {
+            width: 960px;
+            margin: 0 auto;
+            _border: solid 1px brown;
+            margin-top: 20px;
+        }
+
+        #content>div {
+            width: 75%;
+            background-color: lightgrey;
+        }
+
+        img {
+            height: 150px;
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+
+
+        @media screen and (max-width: 980px) {
+            body {
+                background-color: pink;
+            }
+
+            #content {
+                width: 100%;
+            }
+
+            #title {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>Luis Cartagena</h1>
+        </div>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <div id="content">
+
+        <div>
+            <h3>About me</h3>
+            <hr><img src="data:image/jpeg;base64,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">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At reprehenderit dolorum blanditiis veniam voluptates
+                vitae maiores minima, iusto rem est dolorem repellendus itaque voluptate ipsam quasi nemo asperiores dolor
+                delectus?</p>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+
+
+    <body>
+
+
+
+    </body>
+
+</html>
